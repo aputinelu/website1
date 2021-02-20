@@ -16,7 +16,7 @@ import ContactPage from '../Pages/ContactPage'
 
 import './App.css';
 
-const PORT = process.env.PORT || 5000
+
 
 
 class App extends Component {
