@@ -11,7 +11,10 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import store from './store'
 import './index.scss';
-const PORT = process.env.PORT || 5000
+
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 const app = (
     <Provider store={store}>
