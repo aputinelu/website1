@@ -16,9 +16,6 @@ import ContactPage from '../Pages/ContactPage'
 
 import './App.css';
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
 
 class App extends Component {
     render() {
@@ -27,7 +24,7 @@ class App extends Component {
                 <BrowserRouter>
                     <ToastContainer autoClose={2500} position="top-center" />
                     <Switch>
-                        <Route exact path="/" component={HomePageOne} />
+                        <Route exact path="/home-one" component={HomePageOne} />
                         <Route exact path="/home-two" component={HomePageTwo} />
                         <Route exact path="/home-three" component={HomePageThree} />
                         <Route exact path="/about" component={AboutPage} />
